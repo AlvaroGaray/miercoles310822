@@ -1,0 +1,32 @@
+package estructurasdecontrol;
+
+public class condicionales {
+
+	public static void main(String[] args) {
+
+		//Condicional if (simple)
+
+		byte edad=38;
+		String nombre = "Juan";
+		boolean gameOver =true;
+
+		if((edad >0 &&edad >100) || (nombre=="Alvaro" && gameOver )) {
+			//Se ejecuta esto si la condicion es verdadera
+
+			System.out.println(nombre +" tiene "+ edad +" Anios de edad");
+		}
+
+
+		//Condicional if else (doble)
+		gameOver=false;
+		String avenger= "Juan";
+		if (nombre == avenger) {
+			System.out.println("Fin del Juego");
+		}else {
+			System.out.println("Fin del Programa");
+
+		}
+
+
+	}
+}

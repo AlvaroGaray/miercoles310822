@@ -1,0 +1,48 @@
+package estructurasdecontrol;
+import java.util.*;
+public class EJercicioPractico {
+
+	public static void main(String[] args) {
+
+		Scanner es= new Scanner(System.in);
+		int edad;
+		boolean porta= true;
+		String genero, arma;
+		
+		System.out.println("APP PARA ENTRAR AL ESTABLECIMIENTO");
+		System.out.println("Ingres su edad");
+		edad=es.nextInt();
+		System.out.println("Ingrese su genero  H = Hombre / M= Mujer");
+		genero=es.next();
+		System.out.println("Porta Algun Arma? Responda: (si) ó (no)");
+		arma=es.next();
+		
+		if(arma=="si") {
+			porta=true;
+		}else {
+			porta=false;
+		}
+		
+		if(edad < 18 || porta==true) {
+			System.out.println("Lo Sentimos pero, No puede entrar al Establecimiento");
+			
+		}else if(edad < 18 && porta==false) {
+			System.out.println("Lo Sentimos pero, No puede entrar al Establecimiento");
+			
+		}else if(edad >= 18 && edad < 20 && porta==false) {
+			System.out.println("Puede  entrar al Establecimiento pero no ingerir licor");
+			
+		}else if(edad >= 20 && porta==false) {
+			System.out.println("Puede entrar al establecimiento e ingerir licor");
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

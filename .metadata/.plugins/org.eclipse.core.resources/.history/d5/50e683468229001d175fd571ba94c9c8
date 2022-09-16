@@ -1,0 +1,22 @@
+package estructurasdecontrol;
+
+public class condicionales {
+
+	public static void main(String[] args) {
+		
+		//Condicional if (simple)
+		
+		byte edad=38;
+		String nombre = "Alvaro";
+
+		if(edad==38 && nombre=="Alvaro") {
+			//Se ejecuta esto si la condicion es verdadera
+			
+			System.out.println(nombre +" tiene "+ edad +" Anios de edad");
+		}
+		System.out.println("Fin del Programa");
+
+		}
+	
+
+}
